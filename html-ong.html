@@ -1,133 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Verde Vivo - ONG Ambiental</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="container">
 
     <header>
-        <h1>Verde Vivo</h1>
+
+        <h1>Verde Vivo 🌱</h1>
+
         <p>Protegendo a natureza, construindo o futuro.</p>
+
         <button class="menu-toggle">☰</button>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#inicio">Início</a>
-                    </li>
+        <button id="modo-noturno">🌙 Modo noturno</button>
 
-                    <li>
-                        <a href="#sobre">Sobre nós</a>
-                    </li>
+        <nav>
+            <ul>
 
-                    <li>
-                        <a href="#projetos">Projetos</a>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
 
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="#reflorestamento">Reflorestamento</a>
-                    </li>
+                <li>
+                    <a href="#sobre">Sobre nós</a>
+                </li>
 
-                    <li>
-                        <a href="#educacao">Educação ambiental</a>
-                    </li>
-                </ul>
+                <li class="dropdown">
 
-                    <li>
-                        <a href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </nav>
+                    <a href="#projetos">Projetos</a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="#reflorestamento">
+                                Reflorestamento
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#educacao">
+                                Educação ambiental
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+
+            </ul>
+        </nav>
+        
     </header>
 
+
     <main id="conteudo">
+
         <section id="inicio">
-             <h2>Bem-vindo à Verde Vivo</h2>
-             <p>
+
+            <h2>Bem-vindo à Verde Vivo</h2>
+
+            <p>
                 Somos uma ONG dedicada à proteção do meio ambiente
                 e à conscientização sobre a sustentabilidade.
             </p>
 
-             <img src="arvore.jpg"
-               alt="Uma árvore vista de baixo para cima"
-               width="400">
+            <img
+                src="arvore.jpg"
+                alt="Uma árvore vista de baixo para cima"
+                width="400"
+            >
 
         </section>
+
     </main>
-        <section id="sobre">
-            <h2>Sobre nós</h2>
-            <p>
-                Nosso objetivo é promover ações ambientais,
-                incentivar o voluntariado e preservar áreas verdes.
-            </p>
-        </section>
 
-        <section id="projetos">
-            <h2>Nossos projetos</h2>
-
-            <article>
-                <h3>Reflorestamento</h3>
-                <span class="badge">Projeto ativo</span>
-                <p>Plantio de árvores e recuperação de áreas degradadas.</p>
-            </article>
-
-            <article>
-                <h3>Educação ambiental</h3>
-                <span class="badge">Voluntariado</span>
-                <p>Campanhas para ensinar a importância da preservação.</p>
-            </article>
-        </section>
-
-        <section id="contato">
-            <h2>Entre em contato</h2>
-
-            <form id="form-contato">
-
-                <label for="nome">Nome:</label>
-
-                    <input
-                        type="text"
-                        id="nome"
-                        name="nome"
-                        required
-                        minlength="3"
-                    >
-
-                <span class="mensagem-erro">
-                    Digite seu nome.
-                </span>
-
-
-                <label for="email">E-mail:</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                    >
-
-                <span class="mensagem-erro">
-                    Digite um e-mail válido.
-                </span>
-
-
-                <button type="submit">Enviar</button>
-
-            </form>
-
-            <div id="mensagem-sucesso" class="alerta sucesso">
-                Mensagem enviada com sucesso!
-            </div>
-        </section>
-    </main>
 
     <footer>
-        <p>&copy; 2026 Verde Vivo - Todos os direitos reservados.</p>
-        <p>Email: contato@verdevivo.org</p>
+
+        <p>
+            &copy; 2026 Verde Vivo - Todos os direitos reservados.
+        </p>
+
+        <p>
+            Email: contato@verdevivo.org
+        </p>
+
     </footer>
-<script src="script.js"></script>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

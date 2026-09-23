@@ -281,3 +281,34 @@ nav ul {
         flex-direction: column;
     }
 }
+ /* Modo noturno */
+ body {
+    background-color: white;
+    color: #2D3748;
+    transition: 0.3s;
+}
+
+body.modo-noturno {
+    background-color: #1a202c;
+    color: white;
+}
+
+body.modo-noturno header {
+    background-color: #2d3748;
+}
+
+body.modo-noturno footer {
+    background-color: #171923;
+}
+body.modo-noturno {
+    background-color: #1a202c;
+    color: #F7FAFC;
+}
+
+body.modo-noturno h2,
+body.modo-noturno h3,
+body.modo-noturno p,
+body.modo-noturno li,
+body.modo-noturno label {
+    color: #F7FAFC;
+}
