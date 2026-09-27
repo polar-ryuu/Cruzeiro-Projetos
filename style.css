@@ -282,7 +282,8 @@ nav ul {
     }
 }
  /* Modo noturno */
- body {
+
+body {
     background-color: white;
     color: #2D3748;
     transition: 0.3s;
@@ -290,7 +291,7 @@ nav ul {
 
 body.modo-noturno {
     background-color: #1a202c;
-    color: white;
+    color: #F7FAFC;
 }
 
 body.modo-noturno header {
@@ -300,10 +301,9 @@ body.modo-noturno header {
 body.modo-noturno footer {
     background-color: #171923;
 }
-body.modo-noturno {
-    background-color: #1a202c;
-    color: #F7FAFC;
-}
+
+
+/* Textos claros */
 
 body.modo-noturno h2,
 body.modo-noturno h3,
@@ -311,4 +311,28 @@ body.modo-noturno p,
 body.modo-noturno li,
 body.modo-noturno label {
     color: #F7FAFC;
+}
+
+
+/* Títulos verdes no modo noturno */
+
+body.modo-noturno h1,
+body.modo-noturno h2,
+body.modo-noturno h3 {
+    color: #9AE6B4;
+}
+
+
+/* Links do menu verdes no modo noturno */
+
+body.modo-noturno nav a {
+    color: #9AE6B4;
+}
+/* Caixa de Projetos somente no modo escuro */
+body.modo-noturno .dropdown-menu {
+    background-color: #4A5568;
+}
+
+body.modo-noturno .dropdown-menu a {
+    color: #9AE6B4;
 }

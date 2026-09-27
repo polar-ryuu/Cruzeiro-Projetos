@@ -3,13 +3,24 @@
 // ========================================
 
 const botaoMenu = document.querySelector(".menu-toggle");
-const menu = document.querySelector("nav ul");
+const menu = document.querySelector("#menu-principal");
 
 if (botaoMenu && menu) {
 
     botaoMenu.addEventListener("click", function () {
 
         menu.classList.toggle("active");
+        const aberto = menu.classList.contains("active");
+        botaoMenu.setAttribute(
+            "aria-expanded", 
+            aberto
+        );
+        botaoMenu.setAttribute( 
+            "aria-label", 
+            aberto 
+                ? "Fechar menu" 
+                : "Abrir menu" 
+        );
 
     });
 
@@ -245,21 +256,14 @@ const paginas = {
 
         <form id="form-contato">
 
-            <label for="nome">
-                Nome:
-            </label>
-
-            <input
-                type="text"
-                id="nome"
-                name="nome"
-                required
-                minlength="3"
-            >
-
-            <span class="mensagem-erro">
-                Digite seu nome.
-            </span>
+            <label for="nome"> Nome: </label> 
+            <input 
+                type="text"    
+                id="nome" 
+                name="nome" 
+                required minlength="3" 
+            > 
+            <span class="mensagem-erro"> Digite seu nome. </span>
 
 
             <label for="email">
@@ -300,7 +304,8 @@ const paginas = {
         <div
             id="mensagem-sucesso"
             class="alerta sucesso"
-            style="display: none;"
+            role="status"
+            aria-live="polite"
         >
             Mensagem enviada com sucesso!
         </div>
