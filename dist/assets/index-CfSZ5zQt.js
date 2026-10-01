@@ -7,7 +7,7 @@
         </p>
 
         <img
-            src="arvore.jpg"
+            src="arvore2.webp"
             alt="Uma árvore vista de baixo para cima"
             width="400"
         >
